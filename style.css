@@ -1,3 +1,38 @@
-h1 {
-  color: red;
+body {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.square-section {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 370px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  border: solid black 5px;
+  margin: 10px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
 }
