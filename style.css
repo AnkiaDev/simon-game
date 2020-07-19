@@ -1,5 +1,12 @@
 body {
   text-align: center;
+  background-color: #011f3f;
+  font-family: "Press Start 2P", cursive;
+}
+
+h1 {
+  margin: 100px 0 100px 0;
+  color: #fef2bf;
 }
 
 .container {
@@ -11,14 +18,15 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 370px;
+  width: 600px;
 }
 
 .square {
-  width: 150px;
-  height: 150px;
-  border: solid black 5px;
-  margin: 10px;
+  width: 220px;
+  height: 220px;
+  border: solid black 10px;
+  border-radius: 20%;
+  margin: 20px;
 }
 
 .blue {
