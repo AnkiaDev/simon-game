@@ -1,4 +1,4 @@
-let letsPlay = 0;
+const letsPlay = { playIt: false };
 const simonSequence = [];
 const playerSequence = [];
 
@@ -55,9 +55,9 @@ const simonPlay = () => {
 
 // The player press a key, the game begin
 $(document).keypress(() => {
-  if (letsPlay === 0) {
+  if (letsPlay.playIt === false) {
     // if the game has begun don't call simonPlay() again when keypress
-    letsPlay = 1;
+    letsPlay.playIt = true;
     simonPlay();
   }
 });
@@ -86,7 +86,7 @@ $(".square").click(function () {
       $(".title-text").text("Game Over, Press Any Key to Restart");
       simonSequence.splice(0, simonSequence.length);
       //...make the keypress work again for begin a new game.
-      letsPlay = 0;
+      letsPlay.playIt = false;
       return;
     }
   }
